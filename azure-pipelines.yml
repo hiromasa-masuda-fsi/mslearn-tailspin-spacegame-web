@@ -40,11 +40,11 @@ steps:
     projects: '**/*.csproj'
 
 - template template/build.yaml
-  paramaters:
+  parameters:
     buildConfiguration: 'Debug'
 
 - template template/build.yaml
-  paramaters:
+  parameters:
     buildConfiguration: 'Release'
 
 - task: PublishBuildArtifacts@1
